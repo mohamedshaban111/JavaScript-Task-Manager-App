@@ -1,0 +1,119 @@
+body {
+  font-family: serif;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container {
+  width: 90vw;
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form {
+  background-color: rgb(229, 229, 224);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  border: #ddd 2px solid;
+  border-radius: 20px;
+  gap: 10px;
+}
+
+.input {
+  flex: 1;
+  min-width: 60%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid white;
+  border-radius: 8px;
+  overflow-x: auto;
+  text-overflow: ellipsis;
+}
+
+.add {
+  padding: 10px 16px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+  background-color: rgb(250, 110, 30);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 300ms ease all;
+}
+
+.add:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 8px 14px #ccc;
+}
+
+.tasks {
+  display: flex;
+  flex-direction:column;
+  gap: 10px;
+  background-color: #e8e7e7;
+  border-radius: 9px;
+  padding: 10px;
+}
+
+span {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  overflow-x:visible;
+}
+
+.btn {
+  background-color: rgb(244, 14, 14);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  transition: 300ms ease all;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 7px 8px rgb(192, 195, 195);
+  background-color: rgb(233, 60, 60);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 20px;
+  background: linear-gradient(to right, #e0e0e0, #f9f9f9);
+  border-left: 3px solid #3498db;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px ;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+
+h3:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #d0e8ff, #ffffff);
+}
